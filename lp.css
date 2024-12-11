@@ -126,7 +126,7 @@ footer p {
     background-color: #0056b3;
 }
 
-/* Cart Popup Styles */
+/* Cart Popup Styling */
 .cart-popup {
     display: none;
     position: fixed;
@@ -135,16 +135,19 @@ footer p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
 
 .cart-content {
-    background-color: white;
-    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    width: 50%;
-    margin: 100px auto;
-    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cart-content h2 {
@@ -159,24 +162,50 @@ footer p {
     cursor: pointer;
 }
 
-/* Close Button Styles */
+/* Close Button Inside Popup */
 .close-btn {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: background-color 0.3s ease-in-out;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .close-btn:hover {
-    background-color: #cc0000;
+    color: #ff5252;
 }
+
+/* Cart Items Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item span {
+    font-size: 0.9rem;
+}
+
+.remove-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #ff7878;
+}
+
 
 
 /* Responsive Design */
